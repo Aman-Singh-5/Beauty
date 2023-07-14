@@ -529,19 +529,25 @@ hr {
     font-size: 40px!important;
   }
   h2{
-    font-size: 35px!important;
+    font-size: 30px!important;
   }
   p{
     font-size: 24px!important;
   }
 
-
+/* ===nav-section==== */
+.navbar-toggler:focus {
+  box-shadow: none!important;
+}
+.navbar-toggler{
+  border: none!important;
+}
 /* ===banner-section===*/
 .banner-content h1 {
   font-size: 50px!important;
 }
 .banner-content {
-  margin-top: 9rem;
+  margin-top: 10rem;
 }
 .banner-section {
   height: 45rem;
@@ -549,7 +555,9 @@ hr {
 
 /* ============ story section ============ */
 .story-section {
-  background-position-x: -48rem;
+  background-color: #eee6da!important;
+  background-image: none;
+  height: 44rem;
 }
 .story-section-content {
 margin: 6.5rem 1rem 0rem 1rem;
@@ -564,6 +572,18 @@ width: 100%;
   width: 100%;
   background-position: 27px 45px;
   background-size: 10rem;
+}
+.trending-star img{
+  width: 1.5rem;
+}
+/* == whyus section === */
+.whyus-section{
+background-image: none;
+background-color: #eee6da!important;
+height: 32rem;
+}
+.whyus-content {
+  margin-top: 6rem;
 }
 /* === sponser-section ==== */
 .sponser-box {
