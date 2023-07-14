@@ -6,7 +6,7 @@ export const Whyus = () => {
             <section className="section whyus-section">
                 <Container>
                     <Row>
-                        <Col lg={6}>
+                        <Col lg={12}>
                             <div className="whyus-content">
                                 <h1>Why Us</h1>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo magni atque vel iusto consequatur quidem dolores quos, tempora autem vitae quaerat quibusdam unde ipsam ab odio voluptate non numquam earum!</p>
