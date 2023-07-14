@@ -601,6 +601,7 @@ height: 32rem;
 
 /* === category-section==== */
 .category-content-box {
+  margin-top: 2rem!important;
   gap: 0;
   justify-content: flex-start;
   text-align: center;
