@@ -5,7 +5,7 @@ import Col from "react-bootstrap/esm/Col"
 const Content = (props) => {
     return (
         <>
-            <Col lg={4}>
+            <Col lg={4} md={4}>
                 <div className="trending-section-box text-center">
                     <img className="trending-background-img" src={props.src} alt="pic" style={{width: props.width}}/>
                     <div className="trending-section-content text-center">

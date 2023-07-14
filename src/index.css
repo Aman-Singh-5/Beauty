@@ -561,6 +561,9 @@ width: 100%;
 /* ===trending-section==== */
 .trending-section-box {
   margin: auto;
+  width: 100%;
+  background-position: 27px 45px;
+  background-size: 10rem;
 }
 /* === sponser-section ==== */
 .sponser-box {
