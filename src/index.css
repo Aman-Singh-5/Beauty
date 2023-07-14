@@ -128,6 +128,7 @@ a.nav-link {
   
 }
 .whyus-content {
+    width: 41rem;
   margin-top: 14rem;
   padding-right: 2rem;
 }
@@ -421,6 +422,7 @@ hr {
   height: 40rem;
 }
 .whyus-content {
+  width: 94%;
   margin-left: 1rem;
   padding-right: 1rem;
 }
@@ -460,7 +462,7 @@ hr {
   margin-top: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  width: 92%;
+  width: 90%;
 }
 .discover-section p{
   margin-bottom: 1rem!important;
@@ -583,6 +585,7 @@ background-color: #eee6da!important;
 height: 32rem;
 }
 .whyus-content {
+  margin-left: 1.5rem;
   margin-top: 6rem;
 }
 /* === sponser-section ==== */
@@ -725,8 +728,8 @@ height: 32rem;
   width: 7rem;
   text-decoration: none;
 }
-
-
-
-
+.whyus-content {
+  width: 51rem;
+  margin-left: 1.5rem;
+}
 }
