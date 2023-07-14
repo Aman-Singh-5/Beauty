@@ -1,13 +1,593 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@font-face {
+  font-family: 'NewYork';
+  src: local('NewYork'),
+       url('./fonts/NewYork-PERSONAL-USE.woff') format('woff'),
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ========================= global ==================== */
+h1, h2, h3{
+  font-family: NewYork!important;
+}
+h1{
+  font-size: 54px!important;
+  margin-bottom: 2rem!important;
+}
+h2{
+  font-size: 40px!important;
+}
+p{
+  font-size: 24px!important;
+  margin-bottom: 2rem!important;
+}
+.section{
+  margin-top: 5rem;
+}
+/* ====================== nav section =========== */
+.navbar-nav.navbar-nav-scroll {
+  gap: 1rem!important;
+}
+.navbar-brand img{
+  width: 92px;
+}
+button.btn.btn-primary {
+  border-radius: 40px;
+  font-size: 14px;
+  width: 8rem;
+  background-color: hsl(19.2deg 65.79% 70.2%);
+  border: none;
+}
+a.nav-link {
+  font-weight: 600;
+  font-size: 18px;
+}
+.me-auto.my-2.my-lg-0.navbar-nav.navbar-nav-scroll {
+  margin: auto;
+  gap: 2rem;
+}
+/* ========================== banner-section ======================= */
+.banner-section{
+  background-image: url(../public/images/Banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+}
+.banner-content p{
+  width: 45.5rem;
+  font-size: 24px!important;
+  margin-bottom: 4rem;
+}
+.banner-content{
+  margin-top: 7rem;
+}
+.banner-content h1{
+  font-size: 70px!important;
+  margin-bottom: 2rem;
+}
+.btn span{
+  font-size: 25px;
+  font-weight: 600;
+}
+.btn img{
+  width: 2.5rem;
+  margin-left: 1rem;
+  transform: translateY(-3px);
+}
+/* ============= trending section ============= */
+.trending-section-box{
+  background-image: url(../public/images/Trending\ background.png);
+  background-repeat: no-repeat;
+  width: 29rem;
+  background-position: 34px 45px;
+}
+.trending-background-img{
+  width: 65%;
+}
+.trending-section-content {
+  margin-top: 1rem;
+}
+.trending-section-content{
+  margin-bottom: 4rem;
+}
+.trending-section-content h1{
+  margin-bottom: 1rem!important;
+}
+.trending-section-content p{
+  margin: auto!important;
+}
+.trending-section-content h3{
+  margin-top: 1rem;
+}
+/* ========= story section ========= */
+.story-section{
+  background-image: url(../public/images/Banner\ 2.png);
+  height: 47rem;
+  background-size: cover;
+}
+.story-section-content{
+  margin: 7.5rem 0rem 0rem 43rem;
+  width: 37rem;
+}
+.story-section-content p{
+  width: 37rem;
+}
+/* ================ sponser-section ================= */
+.sponser-box{
+  justify-content: center;
+  gap: 7rem;
+}
+.sponser-box img {
+  width: 8rem;
+}
+/* =================== whyus section ===================== */
+.whyus-section{
+  background-image: url(../public/images/Why\ Us.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 47rem;
+  
+}
+.whyus-content {
+  margin-top: 14rem;
+  padding-right: 2rem;
+}
+.whyus-content p{
+  width: 100%;
+}
+/* ============= category-section============== */
+.category-section-content{
+  text-align: center;
+  position: relative;
+}
+.category-section-content img{
+  display: block;
+  width: 13rem;
+  margin-bottom:1rem ;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* backdrop-filter: blur(5px); */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.25s;
+  border-radius: 50%;
+  padding-top: 5rem;
+
+}
+
+.image-container:hover .text-overlay {
+  display: block;
+}
+
+.category-content-box{
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* ========= testimonial-section  ========== */
+.testimonial-section{
+  background-image: url(../public/images/Testimonial.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 27rem;
+}
+.carousel {
+  top: 6rem;
+  max-width: 60rem;
+  margin: auto;
+}
+.crousal-content p{
+  font-size: 18px!important;
+  margin-bottom: 1rem;
+}
+.crousal-content h2{
+  margin-bottom: 2rem;
+}
+.carousel-indicators {
+  bottom: -49px!important;
+}
+.crousal-content {
+  text-align: center;
+  width: 47rem;
+  margin: auto;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 13px!important;
+  height: 13px!important;
+  margin-right: 6px!important;
+}
+.carousel-control-next-icon {
+  background-image: url(../public/images/next.png)!important;
+  background-size: 50px!important;
+}
+.carousel-control-prev-icon {
+  background-image: url(../public/images/left-arrow.png)!important;
+}
+/* ======== discover-section ======== */
+.discover-content-img{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.p-0{
+  padding: 0!important;
+}
+/* ========= product-section ============ */
+.product-section h1{
+  margin-bottom: 4rem!important;
+}
+.product-section-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.product-content-img{
+  width: 17rem;
+}
+.product-content p{
+  margin-bottom: 0.5rem!important;
+  font-size: 30px!important;
+}
+.product-content h4{
+  margin-top: 0.5rem;
+}
+/* ================= video section ============ */
+.video-img{
+  width: 100%;
+}
+/* ========== pic section========= */
+.pic-outer-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.pic-inner-box img{
+  width: 100%;
+}
+/* =============== footer-section ========== */
+.footer-section{
+  background-image: url(../public/images/Footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.beauty-img{
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.footer-link-outerdiv{
+  color: #fff;
+}
+.footer-link-outerdiv ul li{
+  font-size: 20px;
+}
+.footer-link-outerdiv ul{
+  display: inline-block;
+  list-style: none;
+  line-height: 3rem;
+  padding-left: 0;
+}
+.footer-link-outerdiv h2{
+  margin-bottom: 3rem;
+}
+.footer-link-innerdiv{
+  display: flex;
+  gap: 8rem;
+}
+.footer-news-div{
+  color: #fff;
+}
+.footer-news-div h2{
+  margin-bottom: 3rem;
+}
+
+.footer-news-div p{
+  font-size: 20px!important;
+}
+.footer-news-div input{
+  line-height: 2.9rem;
+  width: 14rem;
+}
+.btn-subscribe{
+  padding: 12px;
+  font-size: 18px;
+  width: 9rem;
+  background-color: hsl(27.39deg 39.66% 77.25%);
+  border: none;
+}
+.footer-privacy-div{
+  color: #fff;
+  text-align: end;
+}
+.footer-privacy-div ul{
+  margin-right: 3rem;
+}
+.footer-privacy-div ul>li{
+  display: inline-block;
+  margin-left: 2.5rem;
+}
+.footer-rights-div{
+  color: #fff;
+}
+hr {
+  color: #fff!important;
+  border-top: 2px solid!important;
+  opacity: 1!important;
+}
+.footer-outer-div{
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+
+/* ================== media-query of mobile ================== */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* ======================= global ================= */
+  
+  h1{
+    font-size: 26px!important;
+  }
+  h2{
+    font-size: 24px!important;
+  }
+  p{
+    font-size: 18px!important;
+  }
+  
+  /* ============== banner-section ============= */
+  .banner-content{
+    margin-left: 1rem;
+  }
+  .banner-content h1 {
+    font-size: 30px!important;
+  }
+  .banner-content p {
+    width: 22.5rem;
+    font-size: 18px!important;
+  }
+  .banner-section {
+    height: 34rem;
+  }
+  .btn span {
+    font-size: 20px;
+  }
+  .btn img {
+    width: 1.9rem;
+  }
+  /* =============== trending-section ================= */
+  
+  .trending-section-box {
+      width: 100%;
+      background-position: 29px 49px;
+      background-size: 19rem;
+  }
+  .trending-section-content {
+    margin-bottom: 0rem;
+  }
+  .trending-section-content p{
+    margin-bottom: 2rem!important;
+  }
+  .trending-section-content h3{
+    margin-bottom: 2rem!important;
+  }
+  /* ============ story section ============ */
+  
+
+.story-section {
+    background-position-x: -48rem;
+}
+.story-section-content {
+  margin: 6.5rem 1rem 0rem 1rem;
+  width: 94%;
+}
+.story-section-content p {
+  width: 100%;
+}
+
+/* ========= sponser-section ======= */
+.sponser-box {
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+/* ========= whyus section ======== */
+.whyus-content {
+  margin-left: 1rem;
+  padding-right: 1rem;
+}
+/* =========== category section ====== */
+.category-content-box.row {
+  text-align: center;
+  gap: 1rem;
+}
+/* ======== testimonial-section ========= */
+.crousal-content {
+  text-align: center;
+  width: 73%;
+}
+.carousel {
+  color: #fff;
+  top: 3rem;
+}
+/* =========== discover-section ========== */
+.discover-content-img{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 92%;
+}
+.discover-section p{
+  margin-bottom: 1rem!important;
+}
+/* ============== product-section ============= */
+.product-content p {
+  font-size: 30px!important;
+}
+.product-section-box {
+  grid-template-columns: auto;
+}
+.product-content h4 {
+  margin-bottom: 2rem;
+}
+.product-content p{
+  margin-top: 1rem;
+}
+/* ========== pic-section ======= */
+.pic-outer-box {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+/* ========= footer-section========= */
+.footer-link-innerdiv {
+  gap: 3rem;
+}
+.footer-outer-div {
+  padding-top: 14rem;
+  margin-left: 1rem;
+}
+.footer-social-div.d-flex {
+  margin-bottom: 2rem;
+}
+.footer-news-div h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-subscribe {
+    width: 7rem;
+}
+.footer-privacy-div {
+ 
+  text-align: start;
+}
+.footer-privacy-div ul {
+  margin-top: 2rem;
+  padding: 0!important;
+  margin-right: 0rem;
+}
+.footer-privacy-div ul>li {
+  margin-left: 1.5rem;
+}
+.footer-rights-div.col-lg-6 {
+  text-align: center;
+}
+
+}
+
+/* ============= media query for ipad =============== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* =========== global ======== */
+
+  h1{
+    font-size: 40px!important;
+  }
+  h2{
+    font-size: 35px!important;
+  }
+  p{
+    font-size: 24px!important;
+  }
+
+
+/* ===banner-section===*/
+.banner-content h1 {
+  font-size: 50px!important;
+}
+.banner-content {
+  margin-top: 9rem;
+}
+.banner-section {
+  height: 45rem;
+}
+
+/* ============ story section ============ */
+.story-section {
+  background-position-x: -48rem;
+}
+.story-section-content {
+margin: 6.5rem 1rem 0rem 1rem;
+width: 90%;
+}
+.story-section-content p {
+width: 100%;
+}
+/* ===trending-section==== */
+.trending-section-box {
+  margin: auto;
+}
+/* === sponser-section ==== */
+.sponser-box {
+  flex-wrap: wrap;
+}
+/* ========= product-section=== */
+.product-section-box {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ==pic-section==== */
+.pic-outer-box {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* === category-section==== */
+.category-content-box {
+  gap: 0;
+  justify-content: flex-start;
+  text-align: center;
+}
+/* ===testimonial-section=== */
+.crousal-content {
+  width: 33rem;
+}
+.carousel {
+  color: #fff;
+}
+/* ===discover-section== */
+.discover-content button{
+  margin-bottom: 2rem!important;
+}
+/* ===product-section== */
+.product-section{
+  margin-top: 3rem!important;
+}
+.product-content-img {
+  margin-top: 2rem;
+}
+.product-section h1 {
+  margin-bottom: 2rem!important;
+}
+/* ===footer-section=== */
+.footer-outer-div {
+  padding-top: 15rem;
+}
+.footer-social-div img{
+  width: 14%;
+}
+.footer-social-div{
+  margin-bottom: 4rem;
+}
+.footer-link-innerdiv {
+  margin-bottom: 4rem;
+}
+.footer-privacy-div ul {
+  margin-right: 0rem;
+}
+.footer-privacy-div ul>li {
+  margin-left: 1.5rem;
+}
+
+
 }
