@@ -356,6 +356,9 @@ hr {
   .navbar-toggler:focus {
     box-shadow: none!important;
   }
+  .navbar-toggler{
+    border: none!important;
+  }
   /* ============== banner-section ============= */
   .banner-content{
     margin-left: 1rem;
