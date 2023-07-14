@@ -15,6 +15,7 @@ export const Testimonial = () => {
     return (
         <>
             <section className="section testimonial-section">
+                <div className="testimonial-outer-div">
                 <Container>
                     <Row>
                         <Col>
@@ -44,6 +45,7 @@ export const Testimonial = () => {
                         </Col>
                     </Row>
                 </Container>
+                </div>
             </section>
         </>
     )

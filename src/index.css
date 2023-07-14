@@ -217,6 +217,12 @@ a.nav-link {
 .carousel-control-prev-icon {
   background-image: url(../public/images/left-arrow.png)!important;
 }
+.carousel-indicators .active {
+  background-color: hsl(0deg 43.81% 58.82%)!important;
+}
+.carousel-indicators [data-bs-target]{
+  opacity: 1!important;
+}
 /* ======== discover-section ======== */
 .discover-content-img{
   width: 100%;
@@ -338,18 +344,22 @@ hr {
   /* ======================= global ================= */
   
   h1{
-    font-size: 26px!important;
+    font-size: 30px!important;
   }
   h2{
-    font-size: 24px!important;
+    font-size: 26px!important;
   }
   p{
     font-size: 18px!important;
   }
-  
+  /* ==== nav-section=== */
+  .navbar-toggler:focus {
+    box-shadow: none!important;
+  }
   /* ============== banner-section ============= */
   .banner-content{
     margin-left: 1rem;
+    margin-top: 8rem;
   }
   .banner-content h1 {
     font-size: 30px!important;
@@ -388,6 +398,7 @@ hr {
 
 .story-section {
     background-position-x: -48rem;
+    height: 44rem;
 }
 .story-section-content {
   margin: 6.5rem 1rem 0rem 1rem;
@@ -403,6 +414,9 @@ hr {
   gap: 3rem;
 }
 /* ========= whyus section ======== */
+.whyus-section{
+  height: 40rem;
+}
 .whyus-content {
   margin-left: 1rem;
   padding-right: 1rem;
@@ -416,10 +430,27 @@ hr {
 .crousal-content {
   text-align: center;
   width: 73%;
+  position: relative;
+  z-index: 3;
 }
 .carousel {
   color: #fff;
   top: 3rem;
+}
+.testimonial-outer-div {
+  position: relative;
+}
+.testimonial-outer-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 27rem;
+  background: rgba(0, 0, 0, 0.6);
+
 }
 /* =========== discover-section ========== */
 .discover-content-img{
